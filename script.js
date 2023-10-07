@@ -15,7 +15,7 @@ const acercaDeLink = document.getElementById('acercaDeLink');
 const acercaDeTexto = document.getElementById('acercaDeTexto');
 
 acercaDeLink.addEventListener('click', function(event) {
-    event.preventDefault();
+    // event.preventDefault();
     if (acercaDeTexto.style.display === 'none' || acercaDeTexto.style.display === '') {
         acercaDeTexto.style.display = 'block';
     } else {
@@ -34,4 +34,12 @@ contactoLink.addEventListener('click', function(event) {
     } else {
         contactoTexto.style.display = 'none';
     }
+});
+
+
+const enlaceInicio = document.getElementById('enlaceInicio');
+
+enlaceInicio.addEventListener('click', function(event) {
+    event.preventDefault();
+    window.location.reload();
 });

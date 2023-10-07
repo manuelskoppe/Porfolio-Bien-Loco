@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #1a1a1a;
     color: #ffffff;
+    text-align: center;
 }
 
 header, nav, .hero, .proyectos, footer {
@@ -54,11 +55,8 @@ footer {
     float: right; /* Hace que la imagen se alinee a la derecha */
 }
 
-.contenido-centrado {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 600px; /* Ajusta este valor según sea necesario */
-}
+
+
 
 .contenido-centrado {
     text-align: center;
@@ -68,12 +66,119 @@ footer {
 }
 
 /* Asegúrate de que estas clases tengan estilos similares */
-.proyectos, .acerca-de, .contacto {
+/*.proyectos, .acerca-de, .contacto {
     display: none;
     /* Otros estilos según sea necesario */
-}
+
 
 /* Estilo para mostrar el contenido cuando se activa */
 .proyectos.mostrar, .acerca-de.mostrar, .contacto.mostrar {
     display: block;
+}
+
+.contenido {
+    display: none;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    background-color: #333333;
+    text-align: center;
+    max-width: 600px; /* Limita el ancho del rectángulo */
+}
+
+.contenido-centrado {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    /* Otros estilos según sea necesario */
+}
+
+.contenido.mostrar {
+    display: block;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center; /* Centra los encabezados */
+}
+
+/* Estilos para los párrafos */
+p {
+    margin: 0 auto; /* Centra los párrafos horizontalmente */
+    max-width: 600px; /* Limita el ancho del párrafo para una mejor legibilidad */
+    text-align: center; /* Centra el texto dentro del párrafo */
+}
+
+/* Estilos para otros elementos de texto como listas, enlaces, etc. */
+ul, ol, li, a {
+    text-align: center; /* Centra los elementos de texto dentro de listas y enlaces */
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos uno encima del otro */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 30vh; /* Ajusta la altura del contenedor al 100% del viewport height */
+}
+
+.logo-container h1 {
+    margin-bottom: 10px; /* Agrega un pequeño espacio entre el título y la imagen */
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column; /* Alinear los elementos en columna */
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    background-color: #333333;
+    text-align: center;
+    /* max-width: 600px; */
+    /* margin: 0 auto; */
+    width: 100%; /* Ocupar todo el ancho disponible */
+    max-height: 80vh; /* Limitar la altura a un 80% del viewport height */
+    overflow-y: auto; /* Agregar barra de desplazamiento vertical si el contenido excede la altura */
+}
+
+.acerca-de{
+    display: flex;
+    flex-direction: column; /* Alinear los elementos en columna */
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    background-color: #333333;
+    text-align: center;
+    /* max-width: 600px; */
+    /* margin: 0 auto; */
+    width: 100%; /* Ocupar todo el ancho disponible */
+    max-height: 80vh; /* Limitar la altura a un 80% del viewport height */
+    overflow-y: auto; /* Agregar barra de desplazamiento vertical si el contenido excede la altura */
+}
+
+
+#pinguino:hover {
+    transform: scale(2.2); /* Aumenta el tamaño al 120% cuando el ratón está sobre la imagen */
+    transition: transform 0.3s ease; /* Agrega una transición suave para suavizar el cambio de tamaño */
+}
+
+.emoticon {
+    font-size: 24px; /* Tamaño del emoticono */
+    margin-right: 10px; /* Espacio entre el emoticono y el texto */
+}
+
+.contacto p {
+    color: white; /* Cambia el color del texto a un tono de naranja (puedes usar cualquier color hexadecimal o nombre de color) */
+}
+
+
+.contacto ul li a {
+    font-family: "TuTipoDeLetra", Arial, sans-serif; /* Cambia "TuTipoDeLetra" al nombre de la fuente que desees usar */
+    font-size: 18px; /* Tamaño del texto */
+    color: white; /* Color del texto blanco */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+}
+
+.contacto ul li a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón por encima */
 }

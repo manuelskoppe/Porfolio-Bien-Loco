@@ -15,9 +15,9 @@ header, nav, .hero, .proyectos, footer {
     background-color: #333333;
 }
 
-nav ul {
+/*nav ul {
     list-style: none;
-}
+}*/
 
 nav ul li {
     display: inline;
@@ -33,30 +33,20 @@ nav a {
     font-size: 36px;
 }
 
-.proyectos {
-    /* Estilos para tus proyectos */
-}
+
 
 footer {
     text-align: center;
 }
 
-.logo-container {
+/*.logo-container {
     display: flex;
     align-items: center;
-    justify-content: center; /* Alinea los elementos a la derecha */
+    justify-content: center; 
     margin-top: 20px;
-}
+}*/
 
-.logo-container img {
-    width: 100px;
-    margin-left: 700px;
-}
 
-.logo-container h1 {
-    margin: 0;
-    margin-left: 20px;
-}
 
 /* Resto de tus estilos */
 
@@ -126,6 +116,19 @@ footer {
 }
 
 
+.logo-container img {
+    width: 100px;
+    /* margin-left: 700px; */
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+}
+
 
 /*.hero {
     display: flex;
@@ -164,10 +167,6 @@ footer {
     margin-right: 20px;
 }
 
-.video {
-    width: 300px;
-    height: 200px;
-}*/
 
 /* ... (otros estilos) */
 
@@ -190,4 +189,43 @@ header h2:hover {
 .hero h1 a {
     text-decoration: none; /* Quita el subrayado del enlace */
     color: #ffffff; /* Establece el color del texto a blanco */
+}
+
+.video {
+    transition: transform 0.3s ease; /* Agrega una transición suave para el efecto de crecimiento */
+}
+
+.video:hover {
+    transform: scale(1.2); /* Escala el video al 120% del tamaño original cuando el ratón está sobre él */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+    header h2 {
+        font-size: 24px; /* Reducir el tamaño de la fuente del encabezado */
+    }
+
+    .hero h2 {
+        font-size: 28px; /* Reducir el tamaño de la fuente del subtítulo en el área hero */
+    }
+
+    .logo-container img {
+        width: 60px; /* Reducir el tamaño del logo en el área hero */
+    }
+
+    .contacto, .acerca-de {
+        width: 80%; /* Establece el ancho al 90% del contenedor principal */
+        margin: 10px auto; /* Centra las secciones en el medio del contenedor principal */
+        padding: 10px;
+    }
+
+    #pinguino {
+        width: 60px; /* Reducir el tamaño del pingüino en el footer */
+        bottom: 5px; /* Ajustar la distancia desde la parte inferior del contenedor en el footer */
+        right: 5px; /* Ajustar la distancia desde el lado derecho del contenedor en el footer */
+    }
+
+    nav ul li {
+        margin-right: 10px; /* Reducir el espacio entre elementos del menú de navegación */
+    }
 }
